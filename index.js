@@ -5,9 +5,9 @@ function barf() {
 function vomit() {
     return "vomit";
 }
+
 function returnDate(d) {
     if (!d) {
-        
         var newDate = new Date().setHours(0, 0, 0);    
     } else {
         var newDate = new Date(d);
@@ -17,13 +17,11 @@ function returnDate(d) {
     / (24 * 60 * 60 * 1000)); 
     return diff;
 } 
-
 if (returnDate() === 97) {
     console.log('test 5 passed');
 } else {
     console.log('test 5 failed, days until Christmas, 97');
 }
-
 if (returnDate("12/25/17") === 0) {
     console.log('test 4 passed');
 } else {
